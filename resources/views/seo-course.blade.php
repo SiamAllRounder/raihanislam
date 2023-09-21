@@ -605,7 +605,7 @@
                 </div>
                 <div class="col-lg-6 col-12">
                     <div class="faq-img text-right">
-                        <img src="https://mdfarukkhan.com/assets/landings/assets/images/faq.png" alt="faq" />
+                        {{-- <img src="https://mdfarukkhan.com/assets/landings/assets/images/faq.png" alt="faq" /> --}}
                     </div>
                 </div>
             </div>

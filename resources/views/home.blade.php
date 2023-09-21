@@ -86,18 +86,18 @@
                                 <li>
                                     <a href="https://www.tbsnews.net/features/pursuit/seo-specialist-learn-md-faruk-khan-why-it-red-hot-career-268756"
                                         target="_blank" rel="nofollow">
-                                        <img src="storage/featured-image/TBS-NEWS.png" alt="The Business Standard" />
+                                        <img src="https://mdfarukkhan.com/storage/featured-image/TBS-NEWS.png" alt="The Business Standard" />
                                     </a>
                                 </li>
                                 <li>
                                     <a href="https://www.bbarta24.net/apon-aloy/162352" target="_blank" rel="nofollow">
-                                        <img src="storage/featured-image/Bbarta-news.png" alt="BBarta 24 News" />
+                                        <img src="https://mdfarukkhan.com/storage/featured-image/Bbarta-news.png" alt="BBarta 24 News" />
                                     </a>
                                 </li>
                                 <li>
                                     <a href="https://www.kalerkantho.com/online/corporatecorner/2023/05/18/1281186"
                                         target="_blank" rel="nofollow">
-                                        <img src="storage/featured-image/kaler-kantho .png" alt="kaler kantho" />
+                                        <img src="https://mdfarukkhan.com/storage/featured-image/kaler-kantho .png" alt="kaler kantho" />
                                     </a>
                                 </li>
                             </ul>
@@ -108,13 +108,13 @@
 
                                 <li>
                                     <a href="http://www.bteb.gov.bd/" target="_blank" rel="nofollow">
-                                        <img src="storage/work-image/BTEB.png"
+                                        <img src="https://mdfarukkhan.com/storage/work-image/BTEB.png"
                                             alt="Bangladesh Technical Education Board" />
                                     </a>
                                 </li>
                                 <li>
                                     <a href="https://www.bitm.org.bd/" target="_blank" rel="nofollow">
-                                        <img src="storage/work-image/BITM.png" alt="BITM" />
+                                        <img src="https://mdfarukkhan.com/storage/work-image/BITM.png" alt="BITM" />
                                     </a>
                                 </li>
                             </ul>
@@ -149,7 +149,7 @@
                     <span class="wrap">
 
                         <span class="image">
-                            <img src="storage/brand-image/walton-BD.webp" alt="Walton BD" />
+                            <img src="https://mdfarukkhan.com/storage/brand-image/walton-BD.webp" alt="Walton BD" />
                         </span>
                         <span class="name">Walton BD</span>
                     </span>
@@ -159,7 +159,7 @@
                     <span class="wrap">
 
                         <span class="image">
-                            <img src="storage/brand-image/ifad-group.webp" alt="IFAD Group" />
+                            <img src="https://mdfarukkhan.com/storage/brand-image/ifad-group.webp" alt="IFAD Group" />
                         </span>
                         <span class="name">IFAD Group</span>
                     </span>
@@ -168,7 +168,7 @@
                     <span class="wrap">
 
                         <span class="image">
-                            <img src="storage/brand-image/keya.webp" alt="Keya" />
+                            <img src="https://mdfarukkhan.com/storage/brand-image/keya.webp" alt="Keya" />
                         </span>
                         <span class="name">Keya</span>
                     </span>
@@ -177,7 +177,7 @@
                     <span class="wrap">
 
                         <span class="image">
-                            <img src="storage/brand-image/green-dot-ltd.webp" alt="Green Dot Ltd" />
+                            <img src="https://mdfarukkhan.com/storage/brand-image/green-dot-ltd.webp" alt="Green Dot Ltd" />
                         </span>
                         <span class="name">Green Dot Ltd</span>
                     </span>
@@ -186,7 +186,7 @@
                     <span class="wrap">
 
                         <span class="image">
-                            <img src="storage/brand-image/posh-garments.webp" alt="Posh Garments Ltd" />
+                            <img src="https://mdfarukkhan.com/storage/brand-image/posh-garments.webp" alt="Posh Garments Ltd" />
                         </span>
                         <span class="name">Posh Garments Ltd</span>
                     </span>
@@ -195,7 +195,7 @@
                     <span class="wrap">
 
                         <span class="image">
-                            <img src="storage/brand-image/abm-water-company.webp" alt="ABM Water Ltd" />
+                            <img src="https://mdfarukkhan.com/storage/brand-image/abm-water-company.webp" alt="ABM Water Ltd" />
                         </span>
                         <span class="name">ABM Water Ltd</span>
                     </span>
@@ -204,7 +204,7 @@
                     <span class="wrap">
 
                         <span class="image">
-                            <img src="storage/brand-image/max-secure-ltd.webp" alt="Max Secure Ltd" />
+                            <img src="https://mdfarukkhan.com/storage/brand-image/max-secure-ltd.webp" alt="Max Secure Ltd" />
                         </span>
                         <span class="name">Max Secure Ltd</span>
                     </span>
@@ -213,7 +213,7 @@
                     <span class="wrap">
 
                         <span class="image">
-                            <img src="storage/brand-image/perfume-center.webp" alt="Perfume Center" />
+                            <img src="https://mdfarukkhan.com/storage/brand-image/perfume-center.webp" alt="Perfume Center" />
                         </span>
                         <span class="name">Perfume Center</span>
                     </span>
@@ -222,7 +222,7 @@
                     <span class="wrap">
 
                         <span class="image">
-                            <img src="storage/brand-image/pet-zone-bd.webp" alt="Pet Zone BD" />
+                            <img src="https://mdfarukkhan.com/storage/brand-image/pet-zone-bd.webp" alt="Pet Zone BD" />
                         </span>
                         <span class="name">Pet Zone BD</span>
                     </span>
@@ -231,7 +231,7 @@
                     <span class="wrap">
 
                         <span class="image">
-                            <img src="storage/brand-image/BD-Tender.webp" alt="BDTender" />
+                            <img src="https://mdfarukkhan.com/storage/brand-image/BD-Tender.webp" alt="BDTender" />
                         </span>
                         <span class="name">BDTender</span>
                     </span>
@@ -240,7 +240,7 @@
                     <span class="wrap">
 
                         <span class="image">
-                            <img src="storage/brand-image/vivid-automobiles.webp" alt="Vivid Automobiles" />
+                            <img src="https://mdfarukkhan.com/storage/brand-image/vivid-automobiles.webp" alt="Vivid Automobiles" />
                         </span>
                         <span class="name">Vivid Automobiles</span>
                     </span>
