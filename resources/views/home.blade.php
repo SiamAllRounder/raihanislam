@@ -52,60 +52,19 @@
 
 <body>
     <!-- header-area  -->
-    <header class="header-area">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-3 col-5">
-                    <a href="https://mdfarukkhan.com" class="logo">
-                        <img src="https://mdfarukkhan.com/assets/landings/assets/images/logo.svg" alt="logo" />
-                    </a>
-                </div>
-                <div class="col-lg-9 responsive-menu">
-                    <ul class="mainmenu d-flex align-items-center justify-content-end">
-                        <li>
-                            <a class="active" href="https://mdfarukkhan.com">Home</a>
-                        </li>
-                        <li>
-                            <a class="" href="https://mdfarukkhan.com/about">About</a>
-                        </li>
-                        <li>
-                            <a class="" href="https://mdfarukkhan.com/seo-course">SEO Training</a>
-                        </li>
-                        <li>
-                            <a href="https://mdfarukkhan.com/blog/">Blog</a>
-                        </li>
-                        <li>
-                            <a class="" href="https://mdfarukkhan.com/contact">Contact Us</a>
-                        </li>
-                        <li class="d-none d-lg-block">
-                            <a class="appointment-btn" data-bs-toggle="modal" href="#contactForm">
-                                Need an Appointment</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-7 d-block d-lg-none text-right">
-                    <div class="apoinment">
-                        <a class="appointment-btn" data-bs-toggle="modal" href="#contactForm">
-                            Appointment
-                        </a>
-                        <ul class="menu-trigger">
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+    <x-header-area />
     <div class="hero-area">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-12">
                     <div class="hero-wrap">
-                        <h1 class="subtitle">
+                        {{-- <h1 class="subtitle">
                             <span>I'm</span>
                             Md Faruk Khan
+                        </h1> --}}
+                        <h1 class="subtitle">
+                            <span>I'm</span>
+                           Raihan Islam
                         </h1>
                         <div class="title-wrap">
                             <h1 class="title">SEO Expert in Bangladesh</h1>
@@ -146,11 +105,7 @@
                         <div class="featured-wrap">
                             <h3 class="title">Worked with</h3>
                             <ul class="featured-items">
-                                <li>
-                                    <a href="https://10ms.io/8eLxd0" target="_blank" rel="nofollow">
-                                        <img src="storage/work-image/10-minute-school.png" alt="10 Minute School" />
-                                    </a>
-                                </li>
+
                                 <li>
                                     <a href="http://www.bteb.gov.bd/" target="_blank" rel="nofollow">
                                         <img src="storage/work-image/BTEB.png"
@@ -179,8 +134,8 @@
                             alt="hero shape" class="hero-shape shape3" />
                         <img src="https://mdfarukkhan.com/assets/landings/assets/images/shape/hero-3.svg"
                             alt="hero shape" class="hero-shape shape4" />
-                        <img src="https://mdfarukkhan.com/storage/image/SEO-Expert-Md-Faruk-Khan.png"
-                            alt="SEO Expert Md Faruk Khan" />
+                        {{-- <img src="https://mdfarukkhan.com/storage/image/SEO-Expert-Md-Faruk-Khan.png"
+                            alt="SEO Expert Md Faruk Khan" /> --}}
                     </div>
                 </div>
             </div>
@@ -199,24 +154,7 @@
                         <span class="name">Walton BD</span>
                     </span>
                 </div>
-                <div class="brand-wrap">
-                    <span class="wrap">
-
-                        <span class="image">
-                            <img src="storage/brand-image/islami-bank-BD.webp" alt="IBBL" />
-                        </span>
-                        <span class="name">IBBL</span>
-                    </span>
-                </div>
-                <div class="brand-wrap">
-                    <span class="wrap">
-
-                        <span class="image">
-                            <img src="storage/brand-image/hatil.webp" alt="HATIL" />
-                        </span>
-                        <span class="name">HATIL</span>
-                    </span>
-                </div>
+    
                 <div class="brand-wrap">
                     <span class="wrap">
 
@@ -689,8 +627,8 @@
                         <img class="specialist-shape"
                             src="https://mdfarukkhan.com/assets/landings/assets/images/shape/specialist.svg"
                             alt="specialist" />
-                        <img src="https://mdfarukkhan.com/storage/image/Best-SEO-Expert-in-BD.png"
-                            alt="BEST SEO Expert in BD" />
+                        {{-- <img src="https://mdfarukkhan.com/storage/image/Best-SEO-Expert-in-BD.png"
+                            alt="BEST SEO Expert in BD" /> --}}
                     </div>
                 </div>
             </div>
@@ -718,26 +656,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="testmonial">
-                    <div class="testmonial-wrap">
-                        <p class="content">
-                            I am writing this review to express my utmost satisfaction with the organic YouTube
-                            marketing services provided by Md Faruk Khan. As a representative of the marketing
-                            department at Islami Bank Bangladesh Ltd., I can confidently say that Mr. Khan has exceeded
-                            our expectations in every way possible. He truly understands the importance of creating an
-                            authentic and organic presence on YouTube, and their dedication to our project was evident
-                            from the very beginning.
-                        </p>
-                        <div class="test-info">
-                            <img src="https://mdfarukkhan.com/storage/client-image/islami-bank-BD.webp"
-                                alt="Islami Bank Bangladesh Limited" class="test-img" />
-                            <div class="test-content">
-                                <h4 class="name">Islami Bank Bangladesh Limited</h4>
-                                <span>IBBL</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+               
                 <div class="testmonial">
                     <div class="testmonial-wrap">
                         <p class="content">
@@ -756,24 +675,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="testmonial">
-                    <div class="testmonial-wrap">
-                        <p class="content">
-                            We were looking for an expert who can improve our organic SEO and also, provide us with
-                            video marketing solutions. That is when we started working with Md Faruk Khan. It’s been 2
-                            years working with him and Hatil ranks in over 500+ keywords and our videos made by his
-                            agency good amount of views.
-                        </p>
-                        <div class="test-info">
-                            <img src="https://mdfarukkhan.com/storage/client-image/hatil.webp" alt="HATIL"
-                                class="test-img" />
-                            <div class="test-content">
-                                <h4 class="name">HATIL</h4>
-                                <span>HATIL</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </div>
@@ -901,7 +803,7 @@
                 </div>
                 <div class="col-lg-6 col-12">
                     <div class="faq-img text-right">
-                        <img src="https://mdfarukkhan.com/assets/landings/assets/images/faq.png" alt="faq" />
+                        {{-- <img src="https://mdfarukkhan.com/assets/landings/assets/images/faq.png" alt="faq" /> --}}
                     </div>
                 </div>
             </div>

@@ -67,52 +67,7 @@
 
 <body>
     <!-- header-area  -->
-    <header class="header-area">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-3 col-5">
-                    <a href="https://mdfarukkhan.com" class="logo">
-                        <img src="https://mdfarukkhan.com/assets/landings/assets/images/logo.svg" alt="logo" />
-                    </a>
-                </div>
-                <div class="col-lg-9 responsive-menu">
-                    <ul class="mainmenu d-flex align-items-center justify-content-end">
-                        <li>
-                            <a class="" href="https://mdfarukkhan.com">Home</a>
-                        </li>
-                        <li>
-                            <a class="" href="https://mdfarukkhan.com/about">About</a>
-                        </li>
-                        <li>
-                            <a class="active" href="https://mdfarukkhan.com/seo-course">SEO Training</a>
-                        </li>
-                        <li>
-                            <a href="https://mdfarukkhan.com/blog/">Blog</a>
-                        </li>
-                        <li>
-                            <a class="" href="https://mdfarukkhan.com/contact">Contact Us</a>
-                        </li>
-                        <li class="d-none d-lg-block">
-                            <a class="appointment-btn" data-bs-toggle="modal" href="#contactForm">
-                                Need an Appointment</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-7 d-block d-lg-none text-right">
-                    <div class="apoinment">
-                        <a class="appointment-btn" data-bs-toggle="modal" href="#contactForm">
-                            Appointment
-                        </a>
-                        <ul class="menu-trigger">
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+    <x-header-area />
 
     <div class="training-hero-area">
         <div class="container">
