@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MasterAdminController;
 use App\Http\Controllers\MasterAdminLoginController;
+use App\Http\Controllers\YourController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,6 +18,12 @@ use App\Http\Controllers\MasterAdminLoginController;
 
 Route::get('/welcome', function () {
     return view('welcome');
+});
+
+
+Route::middleware(['web'])->group(function () {
+    Route::post('/your-endpoint', [YourController::class, 'yourMethod']);
+
 });
 
 Route::get('/dashboard', [MasterAdminController::class, 'show'])->name('dashboard')->middleware('admindabtestsentry');
