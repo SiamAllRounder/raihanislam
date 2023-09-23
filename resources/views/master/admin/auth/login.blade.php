@@ -29,16 +29,19 @@
                     <div class="card overflow-hidden">
                         <div class="row g-0">
                             <div class="col-lg-6 d-none d-lg-block p-2">
-                                <img src="assets/velonic/assets/images/auth-img.jpg" alt="" class="img-fluid rounded h-100">
+                                <img src="assets/velonic/assets/images/auth-img.jpg" alt=""
+                                    class="img-fluid rounded h-100">
                             </div>
                             <div class="col-lg-6">
                                 <div class="d-flex flex-column h-100">
                                     <div class="auth-brand p-4">
                                         <a href="index.html" class="logo-light">
-                                            <img src="assets/velonic/assets/images/logo.png" alt="logo" height="22">
+                                            <img src="assets/velonic/assets/images/logo.png" alt="logo"
+                                                height="22">
                                         </a>
                                         <a href="index.html" class="logo-dark">
-                                            <img src="assets/velonic/assets/images/logo-dark.png" alt="dark logo" height="22">
+                                            <img src="assets/velonic/assets/images/logo-dark.png" alt="dark logo"
+                                                height="22">
                                         </a>
                                     </div>
                                     <div class="p-4 my-auto">
@@ -47,20 +50,33 @@
                                             account.
                                         </p>
 
+                                        @if ($errors->any())
+                                            <div class="text-warning p-3">
+                                                <ul>
+                                                    @foreach ($errors->all() as $error)
+                                                        <li>{{ $error }}</li>
+                                                    @endforeach
+                                                </ul>
+
+                                            </div>
+
+                                        @endif
+
                                         <!-- form -->
-                                        <form action="#">
+                                        <form action="{{ url('login') }}" method="POST">
+                                            @csrf
                                             <div class="mb-3">
                                                 <label for="emailaddress" class="form-label">Email address</label>
-                                                <input class="form-control" type="email" id="emailaddress" required=""
-                                                    placeholder="Enter your email">
+                                                <input class="form-control" type="email" id="emailaddress"
+                                                    required="" name="email" placeholder="Enter your email">
                                             </div>
                                             <div class="mb-3">
                                                 <a href="auth-forgotpw.html" class="text-muted float-end"><small>Forgot
                                                         your
                                                         password?</small></a>
                                                 <label for="password" class="form-label">Password</label>
-                                                <input class="form-control" type="password" required="" id="password"
-                                                    placeholder="Enter your password">
+                                                <input class="form-control" type="password" required=""
+                                                    id="password" name="password" placeholder="Enter your password">
                                             </div>
                                             <div class="mb-3">
                                                 <div class="form-check">
@@ -114,7 +130,9 @@
 
     <footer class="footer footer-alt fw-medium">
         <span class="text-dark">
-            <script>document.write(new Date().getFullYear())</script> © Velonic - Theme by Techzaa
+            <script>
+                document.write(new Date().getFullYear())
+            </script> © Velonic - Theme by Techzaa
         </span>
     </footer>
     <!-- Vendor js -->

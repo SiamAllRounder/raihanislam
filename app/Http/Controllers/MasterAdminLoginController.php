@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Models\User;
 
 use Illuminate\Http\Request;
 
@@ -11,7 +12,6 @@ class MasterAdminLoginController extends Controller
      */
     function __construct()
     {
-        
     }
 
     public function index()
@@ -37,14 +37,31 @@ class MasterAdminLoginController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
-    {
-    }
-
-    public function login()
+    public function show()
     {
         return view('master.admin.auth.login');
     }
+
+    public function login(Request $request)
+    {
+
+
+        validator(request()->all(), [
+            'email' => ['required', 'email'],
+            'password' => ['required'],
+        ])->validate();
+        if (auth()->attempt(request()->only(['email', 'password']))) {
+            $username = User::where('id', 11)->value('name');
+
+        $request->session()->put('name',  $username);
+            return redirect('/dashboard');
+        }
+        return redirect()->back()->withErrors(['email' => 'Invalid Credentials']);
+    }
+    // public function logon()
+    // {
+
+    // }
 
 
 

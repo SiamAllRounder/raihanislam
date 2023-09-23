@@ -53,7 +53,7 @@ class MasterAdminController extends Controller
         $request->session()->flush();
 
         echo $request->session()->get('name');
-        return redirect('/');
+        return redirect('/masterlogin');
     }
 
     /**
