@@ -31,6 +31,11 @@ class MasterAdminController extends Controller
      */
     public function store(Request $request)
     {
+        
+    }
+
+    public function sessionsetter(Request $request)
+    {
         $username = User::where('id', 11)->value('name');
 
         $request->session()->put('name',  $username);
@@ -38,6 +43,7 @@ class MasterAdminController extends Controller
         // $request->session()->flush();
 
         echo $request->session()->get('name');
+        return redirect('/dashboard');
     }
 
     public function sessionremover(Request $request)
@@ -47,6 +53,7 @@ class MasterAdminController extends Controller
         $request->session()->flush();
 
         echo $request->session()->get('name');
+        return redirect('/dashboard');
     }
 
     /**
