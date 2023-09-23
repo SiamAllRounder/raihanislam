@@ -28,7 +28,9 @@ class MasterAdminController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->session()->put('name', 'salam');
+        echo $request->session()->get('name');
+        // echo $request->session()->flush();
     }
 
     /**
@@ -36,8 +38,8 @@ class MasterAdminController extends Controller
      */
     public function show(MasterAdminORM $MasterAdminORM)
     {
-        return view('master.admin.dashboard.index3');
 
+        return view('master.admin.dashboard.index3');
     }
 
     /**

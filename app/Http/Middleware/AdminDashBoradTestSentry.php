@@ -16,7 +16,14 @@ class AdminDashBoradTestSentry
     public function handle(Request $request, Closure $next): Response
     {
         echo "Salam from Admin Dash Borad Test Sentry Middleware";
+        $getnametestsession =  $request->session()->get('name');
+
+        if($getnametestsession === "salam") {
+
+            return $next($request);
+        } else {
+            return response(exit());
+        }
         
-        return $next($request);
     }
 }
