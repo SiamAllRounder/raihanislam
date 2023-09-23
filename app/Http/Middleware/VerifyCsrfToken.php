@@ -11,11 +11,11 @@ class VerifyCsrfToken extends Middleware
      *
      * @var array<int, string>
      */
-    protected $except = [
-        '/your-endpoint',
-    ];
-    
     // protected $except = [
-    //     //
+    //     '/your-endpoint',
     // ];
+    
+    protected $except = [
+        //
+    ];
 }
