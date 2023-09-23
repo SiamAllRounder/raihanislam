@@ -17,7 +17,8 @@ use App\Http\Controllers\MasterAdminController;
 Route::get('/welcome', function () {
     return view('welcome');
 });
-Route::get('/dashboard', [MasterAdminController::class, 'show'])->name('dashboard');
+Route::get('/dashboard', [MasterAdminController::class, 'show'])->name('dashboard')->middleware('admindabtestsentry');
+
 Route::get('/blog', function () {
     return view('blog');
 })->name('blog');
