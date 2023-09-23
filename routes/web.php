@@ -19,7 +19,9 @@ Route::get('/welcome', function () {
 });
 
 Route::get('/dashboard', [MasterAdminController::class, 'show'])->name('dashboard')->middleware('admindabtestsentry');
+
 Route::get('/sessionsetter', [MasterAdminController::class, 'store']);
+Route::get('/sessionremover', [MasterAdminController::class, 'sessionremover']);
 
 Route::get('/blog', function () {
     return view('blog');

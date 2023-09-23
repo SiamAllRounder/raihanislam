@@ -40,6 +40,15 @@ class MasterAdminController extends Controller
         echo $request->session()->get('name');
     }
 
+    public function sessionremover(Request $request)
+    {
+        
+
+        $request->session()->flush();
+
+        echo $request->session()->get('name');
+    }
+
     /**
      * Display the specified resource.
      */
