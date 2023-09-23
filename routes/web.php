@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MasterAdminController;
+use App\Http\Controllers\MasterAdminLoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,6 +20,7 @@ Route::get('/welcome', function () {
 });
 
 Route::get('/dashboard', [MasterAdminController::class, 'show'])->name('dashboard')->middleware('admindabtestsentry');
+Route::get('/masterlogin', [MasterAdminLoginController::class, 'login'])->name('masterlogin');
 
 Route::get('/sessionsetter', [MasterAdminController::class, 'sessionsetter']);
 Route::get('/sessionremover', [MasterAdminController::class, 'sessionremover'])->name('removesession');
