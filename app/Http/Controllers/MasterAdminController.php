@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
+
+
 use App\Models\MasterAdminORM;
 use Illuminate\Http\Request;
 
@@ -28,9 +31,13 @@ class MasterAdminController extends Controller
      */
     public function store(Request $request)
     {
-        $request->session()->put('name', 'salam');
+        $username = User::where('id', 11)->value('name');
+
+        $request->session()->put('name',  $username);
+
+        // $request->session()->flush();
+
         echo $request->session()->get('name');
-        // echo $request->session()->flush();
     }
 
     /**

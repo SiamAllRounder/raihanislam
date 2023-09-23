@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Middleware;
+use App\Models\User;
 
 use Closure;
 use Illuminate\Http\Request;
@@ -17,8 +18,9 @@ class AdminDashBoradTestSentry
     {
         echo "Salam from Admin Dash Borad Test Sentry Middleware";
         $getnametestsession =  $request->session()->get('name');
+        $username = User::where('id', 11)->value('name');
 
-        if($getnametestsession === "salam") {
+        if($getnametestsession === $username) {
 
             return $next($request);
         } else {
