@@ -51,7 +51,7 @@ class MasterAdminLoginController extends Controller
             'password' => ['required'],
         ])->validate();
         if (auth()->attempt(request()->only(['email', 'password']))) {
-            $username = User::where('id', 11)->value('name');
+            $username = User::where('id', 1)->value('name');
 
         $request->session()->put('name',  $username);
             return redirect('/dashboard');

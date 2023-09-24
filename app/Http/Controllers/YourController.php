@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Models\User;
 
 use Illuminate\Http\Request;
 
@@ -28,12 +29,15 @@ class YourController extends Controller
 public function yourMethod(Request $request)
 {
     // Process the incoming JSON data
-    $data = $request->json()->all();
+    // $data = $request->json()->all();
+    $allusers = User::all();
 
     // You can do something with the data here
 
     // Return a JSON response
-    return response()->json(['message' => 'Data received successfully', 'data' => $data]);
+    return response()->json(['allusers' => $allusers]);
+    // return response()->json(['allusers' => $allusers, 'data' => $data]);
+    // return response()->json(['message' => 'Data received successfully', 'data' => $data]);
 }
 
 

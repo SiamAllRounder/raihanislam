@@ -36,7 +36,7 @@ class MasterAdminController extends Controller
 
     public function sessionsetter(Request $request)
     {
-        $username = User::where('id', 11)->value('name');
+        $username = User::where('id', 1)->value('name');
 
         $request->session()->put('name',  $username);
 

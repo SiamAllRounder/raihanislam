@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MasterAdminController;
 use App\Http\Controllers\MasterAdminLoginController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\YourController;
 use Illuminate\Http\Request;
 
@@ -49,9 +50,7 @@ Route::get('/blog', function () {
     return view('blog');
 })->name('blog');
 
-Route::get('/', function () {
-    return view('home');
-})->name('home');
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::get('/about', function () {
     return view('about');

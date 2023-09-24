@@ -4,7 +4,7 @@
             <div class="col-lg-3 col-5">
                 <a href="{{ route('home') }}" class="logo">
                     {{-- <img src="https://mdfarukkhan.com/assets/landings/assets/images/logo.svg" alt="logo" /> --}}
-                    <h1><span style="color: #09f">Raihan</span> Islam</h1>
+                    <h1><span style="color: #09f">{{ $first_name }}</span> {{ $last_name }}</h1>
                 </a>
             </div>
             <x-responsive-menu />
