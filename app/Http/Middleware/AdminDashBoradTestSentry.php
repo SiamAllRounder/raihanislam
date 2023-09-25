@@ -18,7 +18,7 @@ class AdminDashBoradTestSentry
     {
         echo "Salam from Admin Dash Borad Test Sentry Middleware";
         $getnametestsession =  $request->session()->get('name');
-        $username = User::where('id', 11)->value('name');
+        $username = User::where('id', 1)->value('name');
 
         if($getnametestsession === $username) {
 
