@@ -1,16 +1,49 @@
 <?php
-
 namespace App\Http\Controllers;
+
+use App\Models\MainNavigationMenuModel;
+use Illuminate\Http\JsonResponse;
+
+
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
+    
+    public function checkTableEmpty()
+{
+    $tableName = (new MainNavigationMenuModel)->getTable();
+
+    // Use Eloquent to count the rows in the table
+    $rowCount = MainNavigationMenuModel::count();
+
+    if ($rowCount === 0) {
+        // Table exists and is empty, insert data into the "name" column
+        MainNavigationMenuModel::create([
+            'name' => 'Home', // Replace with the desired name
+        ]);
+
+        return response()->json([
+            'message' => "Table '{$tableName}' exists and was empty. Data has been inserted into the 'name' column.",
+        ]);
+    } else {
+        // Table exists and is not empty
+        return response()->json([
+            'message' => "Table '{$tableName}' exists and has {$rowCount} rows.",
+        ]);
+    }
+}
+
+
     /**
      * Display a listing of the resource.
      */
     public function index(Request $request)
     {
-       
+
+          // Call the checkTableEmpty() method
+    $tableStatus = $this->checkTableEmpty();
+
 
         return view('home');
     }
@@ -36,7 +69,7 @@ class HomeController extends Controller
      */
     public function show()
     {
-        //
+        return "this is show method on Home Controller";
     }
 
     /**
