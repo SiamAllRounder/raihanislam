@@ -62,7 +62,7 @@ class MasterAdminController extends Controller
     public function show(MasterAdminORM $MasterAdminORM)
     {
 
-        return view('master.admin.dashboard.index3');
+        return view('master.admin.dashboard.index');
     }
 
     /**
