@@ -22,6 +22,24 @@ class HomeController extends Controller
         MainNavigationMenuModel::create([
             'name' => 'Home', // Replace with the desired name
         ]);
+        MainNavigationMenuModel::create([
+            'name' => 'About', // Replace with the desired name
+        ]);
+        MainNavigationMenuModel::create([
+            'name' => 'SEO Training', // Replace with the desired name
+        ]);
+        MainNavigationMenuModel::create([
+            'name' => 'Blog', // Replace with the desired name
+        ]);
+        MainNavigationMenuModel::create([
+            'name' => 'Contact Us', // Replace with the desired name
+        ]);
+        MainNavigationMenuModel::create([
+            'name' => 'Need an Appointment', // Replace with the desired name
+        ]);
+
+
+
 
         return response()->json([
             'message' => "Table '{$tableName}' exists and was empty. Data has been inserted into the 'name' column.",
