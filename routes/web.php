@@ -42,6 +42,7 @@ Route::get('/dashboard', [MasterAdminController::class, 'show'])->name('dashboar
 Route::get('/masterlogin', [MasterAdminLoginController::class, 'show'])->name('masterlogin');
 
 Route::post('/login', [MasterAdminLoginController::class, 'login']);
+Route::get('/logout', [MasterAdminLoginController::class, 'logout'])->name('logout');
 
 Route::get('/sessionsetter', [MasterAdminController::class, 'sessionsetter']);
 Route::get('/sessionremover', [MasterAdminController::class, 'sessionremover'])->name('removesession');

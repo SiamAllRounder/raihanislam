@@ -58,10 +58,13 @@ class MasterAdminLoginController extends Controller
         }
         return redirect()->back()->withErrors(['email' => 'Invalid Credentials']);
     }
-    // public function logon()
-    // {
+    public function logout()
+    {
+        auth()->logout();
 
-    // }
+        return redirect('/masterlogin');
+
+    }
 
 
 
