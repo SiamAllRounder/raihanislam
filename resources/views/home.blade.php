@@ -26,8 +26,10 @@
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Md Faruk Khan - Best SEO Expert in Bangladesh" />
     <meta property="og:url" content="https://mdfarukkhan.com/" />
+    {{-- <meta property="og:image"
+        content="https://mdfarukkhan.com/storage/image/Who-is-the-best-seo-expert-in-Bangladesh.jpg" /> --}}
     <meta property="og:image"
-        content="https://mdfarukkhan.com/storage/image/Who-is-the-best-seo-expert-in-Bangladesh.jpg" />
+        content="{{ asset('assets/images/top-seo-area/750x415.png') }}" />
     <meta property="og:description"
         content="Boost your online presence with Md Faruk Khan, a leading SEO expert in Bangladesh, offering 10+ years of experience in driving business growth & success." />
     <!-- Google Tag Manager -->
@@ -60,6 +62,7 @@
     <x-top-seo-area />
     <x-client-area />
     <x-hiring-area />
+    <x-specialist-area />
     <x-testmonial-area />
     <x-faq-area />
     <x-footer-area />

@@ -81,6 +81,8 @@
                         alt="hero shape" class="hero-shape shape4" />
                     {{-- <img src="https://mdfarukkhan.com/storage/image/SEO-Expert-Md-Faruk-Khan.png"
                         alt="SEO Expert Md Faruk Khan" /> --}}
+                    <img style="opacity: .3" src="{{ asset('assets/images/hero-images/500x750.png') }}"
+                        alt="SEO Expert Md Faruk Khan" />
                 </div>
             </div>
         </div>

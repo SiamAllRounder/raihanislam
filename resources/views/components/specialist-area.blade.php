@@ -55,6 +55,8 @@
                         alt="specialist" />
                     {{-- <img src="https://mdfarukkhan.com/storage/image/Best-SEO-Expert-in-BD.png"
                         alt="BEST SEO Expert in BD" /> --}}
+                    <img style="opacity: .3" src="{{ asset('assets/images/specialist-images/500x750.png') }}"
+                        alt="BEST SEO Expert in BD" />
                 </div>
             </div>
         </div>

@@ -123,6 +123,7 @@
             <div class="col-lg-6 col-12">
                 <div class="faq-img text-right">
                     {{-- <img src="https://mdfarukkhan.com/assets/landings/assets/images/faq.png" alt="faq" /> --}}
+                    <img style="opacity: .3" src="{{ asset('assets/images/faq-area/513x379.png') }}" alt="faq" />
                 </div>
             </div>
         </div>

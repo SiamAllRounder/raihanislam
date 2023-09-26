@@ -51,8 +51,11 @@
             <div class="about-content-wrap">
                 <div class="about-sidebar">
                     <div class="about-image">
-                        <img class="image"
+                        {{-- <img class="image"
                             src="https://mdfarukkhan.com/assets/landings/assets/images/seo-expert-md-faruk-khan.webp"
+                            alt="Md Faruk Khan" /> --}}
+                        <img style="opacity: .3" class="image"
+                            src="{{ asset('assets/images/about-image/361x532.png') }}"
                             alt="Md Faruk Khan" />
                         <img class="shape" src="https://mdfarukkhan.com/assets/landings/assets/images/shape/about.svg"
                             alt="about" />

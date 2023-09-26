@@ -49,7 +49,9 @@
             </div>
             <div class="col-lg-8 col-12">
                 <div class="seo-img">
-                    <img src="https://mdfarukkhan.com/storage/image/Who-is-the-best-seo-expert-in-Bangladesh.jpg"
+                    {{-- <img src="https://mdfarukkhan.com/storage/image/Who-is-the-best-seo-expert-in-Bangladesh.jpg"
+                        alt="WHO IS THE TOP SEO EXPERT IN BANGLADESH" /> --}}
+                    <img src="{{ asset('assets/images/top-seo-area/750x415.png') }}"
                         alt="WHO IS THE TOP SEO EXPERT IN BANGLADESH" />
                 </div>
             </div>
