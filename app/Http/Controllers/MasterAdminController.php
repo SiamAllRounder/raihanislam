@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use Illuminate\Support\Facades\DB;
 
 use App\Models\User;
 
@@ -65,11 +66,29 @@ class MasterAdminController extends Controller
         return view('master.admin.dashboard.index');
     }
 
-    public function footer_text_editor(MasterAdminORM $MasterAdminORM)
-    {
+  
 
-        return view('master.admin.dashboard.footer-text-editor');
+    public function footer_text_editor(MasterAdminORM $MasterAdminORM, Request $request)
+{
+    if ($request->isMethod('post')) {
+        // Handle form submission and update the database here
+        $newFootnoteText = $request->input('footnote_text');
+        DB::table('footnote')->update(['footernote' => $newFootnoteText]);
+        
+        // Redirect back to the form or any other page
+        return redirect()->route('footer-text-editor'); // Replace with your desired route
     }
+
+    // If it's a GET request, retrieve the current footnote data
+    $footnote = DB::table('footnote')->first(); // Assuming there's only one footnote record
+
+    $data = [
+        'footnote' => $footnote
+    ];
+
+    return view('master.admin.dashboard.footer-text-editor', $data);
+}
+
 
     /**
      * Show the form for editing the specified resource.

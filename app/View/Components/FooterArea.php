@@ -1,7 +1,7 @@
 <?php
 
 namespace App\View\Components;
-
+use Illuminate\Support\Facades\DB;
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
@@ -21,6 +21,10 @@ class FooterArea extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.footer-area');
+        $footnote = DB::table('footnote')->get();
+        $data = [
+            'footnote' => $footnote
+        ];
+        return view('components.footer-area', $data);
     }
 }

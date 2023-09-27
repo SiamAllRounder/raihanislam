@@ -89,12 +89,20 @@
     </div>
     <div class="footer-bottom-area">
         <div class="container">
-            <p class="copyright">
+            {{-- <p class="copyright">
                 &copy;
                 <script>
                     document.write(new Date().getFullYear());
                 </script>
                 . All rights reserved by Md Faruk Khan
+            </p> --}}
+            <p class="copyright">
+                &copy;
+                <script>
+                    document.write(new Date().getFullYear());
+                </script>
+                . {{ $footnote[0]->footernote }}
+
             </p>
         </div>
     </div>

@@ -40,6 +40,7 @@ Route::post('/your-endpoint', [YourController::class, 'yourMethod']);
 
 Route::get('/dashboard', [MasterAdminController::class, 'show'])->name('dashboard')->middleware('admindabtestsentry');
 Route::get('/dashboard/footer-text-editor', [MasterAdminController::class, 'footer_text_editor'])->name('footer-text-editor')->middleware('admindabtestsentry');
+Route::post('/dashboard/footer-text-editor', [MasterAdminController::class, 'footer_text_editor'])->name('footer-text-editor')->middleware('admindabtestsentry');
 Route::get('/masterlogin', [MasterAdminLoginController::class, 'show'])->name('masterlogin');
 
 Route::post('/login', [MasterAdminLoginController::class, 'login']);

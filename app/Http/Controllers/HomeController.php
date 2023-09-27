@@ -2,6 +2,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\MainNavigationMenuModel;
+use App\Models\FooterNote;
 use Illuminate\Http\JsonResponse;
 
 
@@ -13,10 +14,18 @@ class HomeController extends Controller
     public function checkTableEmpty()
 {
     $tableName = (new MainNavigationMenuModel)->getTable();
+    $tableNamefootnote = (new FooterNote)->getTable();
 
     // Use Eloquent to count the rows in the table
     $rowCount = MainNavigationMenuModel::count();
+    $rowCountfootnote = FooterNote::count();
 
+    if ($rowCountfootnote === 0) { 
+        FooterNote::create([
+            'footernote' => null // Replace with the desired name
+        ]);
+
+    }
     if ($rowCount === 0) {
         // Table exists and is empty, insert data into the "name" column
         MainNavigationMenuModel::create([

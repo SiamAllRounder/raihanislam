@@ -259,14 +259,22 @@
           <h5>Text Editor</h5>
           <p>A WYSIWYG is one that allows a developer to see what the end result will look like while the interface or document is being created.</p>
         </div><!-- sl-page-title -->
-
         <div class="card pd-20 pd-sm-40">
           <h6 class="card-body-title">Medium Editor Plugin</h6>
           <p class="mg-b-20 mg-sm-b-30">Below is an example of a basic inline editing using medium-editor.</p>
 
           <p>Try highlighting some of the text below.</p>
-          <div class="editable tx-16 bd pd-30 tx-inverse">One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.</div>
-        </div><!-- card -->
+          {{-- <div class="editable tx-16 bd pd-30 tx-inverse">One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.</div> --}}
+          <form method="post" action="{{ route('footer-text-editor') }}"> <!-- Replace with your route name -->
+            @csrf <!-- Include Laravel's CSRF token field for security -->
+        
+            <textarea rows="3" class="form-control tx-16 bd pd-30 tx-inverse" name="footnote_text">{{ $footnote->footernote }}</textarea>
+        
+            <button type="submit">Update Footnote</button>
+        </form>
+        
+        </div>
+        <!-- card -->
 
         <p class="tx-11 tx-uppercase tx-spacing-2 mg-t-40 mg-b-10 tx-gray-600">HTML Code</p>
         <pre><code class="html pd-20">&lt;div class="editable"&gt;One morning, when...&lt;/div&gt;</code></pre>
