@@ -14,10 +14,8 @@
                     <div class="title-wrap">
                         <h1 class="title">SEO Expert in Bangladesh</h1>
                     </div>
-                    <p>I can get your business web page at the top of the SERP list. Using the latest digital
-                        marketing trends, I can enhance your online visibility and drive more website traffic. With
-                        my vast experience as an SEO expert and marketing skills, I can optimize your website
-                        content to be more revenue-generating.</p>
+                    {{-- <p>{{ dd($hero_text_description_on_left) }}</p> --}}
+                    <p>{{ $hero_text_description_on_left }}</p>
                     <a data-bs-toggle="modal" href="#contactForm" class="btn-style">
                         <span>Hire Me</span>
                         <img src="https://mdfarukkhan.com/assets/landings/assets/images/icons/btn.svg"

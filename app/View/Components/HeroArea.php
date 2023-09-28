@@ -1,6 +1,7 @@
 <?php
 
 namespace App\View\Components;
+use App\Models\HeroTexts;
 
 use Closure;
 use Illuminate\Contracts\View\View;
@@ -21,6 +22,11 @@ class HeroArea extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.hero-area');
+        //User::where('id', 1)->value('name')
+        $hero_text_description_on_left = HeroTexts::where('id', 1)->value('home_page_hero_text_description_on_left_column');
+        $data = [
+            'hero_text_description_on_left' => $hero_text_description_on_left
+        ];
+        return view('components.hero-area',$data);
     }
 }

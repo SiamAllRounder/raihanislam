@@ -33,6 +33,8 @@ Route::get('/welcome', function () {
 
 Route::post('/your-endpoint', [YourController::class, 'yourMethod']);
 
+Route::post('/update-hero-text-left', [MasterAdminController::class, 'hero_text_left_updater'])->name('update-hero-text-left')->middleware('admindabtestsentry');
+
 // Route::middleware(['web'])->group(function () {
 //     Route::post('/your-endpoint', [YourController::class, 'yourMethod']);
 

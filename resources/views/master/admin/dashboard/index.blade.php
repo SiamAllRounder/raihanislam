@@ -369,20 +369,32 @@
                 <div class="modal-dialog modal-lg" role="document">
                     <div class="modal-content tx-size-sm">
                         <div class="modal-header pd-x-20">
-                            <h6 class="tx-14 mg-b-0 tx-uppercase tx-inverse tx-bold">Home Page Hero Description On Left side Message Preview</h6>
+                            <h6 class="tx-14 mg-b-0 tx-uppercase tx-inverse tx-bold">Home Page Hero Description On Left
+                                side Message Preview</h6>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
                         <div class="modal-body pd-20">
-                            <h4 class=" lh-3 mg-b-20"><a href="{{ route('home') }}" class="tx-inverse hover-primary">Home Page Hero Description On Left side Message</a></h4>
-                            <p class="mg-b-5">It is a long established fact that a reader will be distracted by the
+                            <h4 class=" lh-3 mg-b-20"><a href="{{ route('home') }}"
+                                    class="tx-inverse hover-primary">Home Page Hero Description On Left side
+                                    Message</a></h4>
+                            {{-- <p class="mg-b-5">It is a long established fact that a reader will be distracted by the
                                 readable content of a page when looking at its layout. The point of using Lorem Ipsum is
                                 that it has a more-or-less normal distribution of letters, as opposed to using 'Content
-                                here, content here', making it look like readable English. </p>
-                        </div><!-- modal-body -->
+                                here, content here', making it look like readable English. </p> --}}
+                            <form method="post" action="{{ route('update-hero-text-left') }}">
+                                <!-- Replace with your route name -->
+                                @csrf <!-- Include Laravel's CSRF token field for security -->
+
+                                <textarea rows="5" class="form-control tx-16 bd pd-30 tx-inverse" name="hero_text_description_on_left">{{ $hero_text_description_on_left }}</textarea>
+
+                                <button class="btn btn-primary btn-block mg-t-10" type="submit">Update Hero Text</button>
+                            </form>
+                        </div>
+                        <!-- modal-body -->
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-info pd-x-20">Save changes</button>
+                            {{-- <button type="button" class="btn btn-info pd-x-20">Save changes</button> --}}
                             <button type="button" class="btn btn-secondary pd-x-20"
                                 data-dismiss="modal">Close</button>
                         </div>
