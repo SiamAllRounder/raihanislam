@@ -250,15 +250,16 @@
     <div class="sl-mainpanel">
       <nav class="breadcrumb sl-breadcrumb">
         <a class="breadcrumb-item" href="index.html">Starlight</a>
-        <a class="breadcrumb-item" href="index.html">Forms</a>
+        <a class="breadcrumb-item" href="index.html">Footer</a>
         <span class="breadcrumb-item active">Text Editor</span>
       </nav>
 
       <div class="sl-pagebody">
         <div class="sl-page-title">
-          <h5>Text Editor</h5>
+          <h5>Footer Text Editor</h5>
           <p>A WYSIWYG is one that allows a developer to see what the end result will look like while the interface or document is being created.</p>
-        </div><!-- sl-page-title -->
+        </div>
+        <!-- sl-page-title -->
         <div class="card pd-20 pd-sm-40">
           <h6 class="card-body-title">Medium Editor Plugin</h6>
           <p class="mg-b-20 mg-sm-b-30">Below is an example of a basic inline editing using medium-editor.</p>
@@ -296,7 +297,8 @@
 height: 150
 })</code></pre>
 
-      </div><!-- sl-pagebody -->
+      </div>
+      <!-- sl-pagebody -->
       <footer class="sl-footer">
         <div class="footer-left">
           <div class="mg-b-2">Copyright &copy; 2017. Starlight. All Rights Reserved.</div>

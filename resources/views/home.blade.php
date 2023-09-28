@@ -173,8 +173,8 @@
     </script>
     <script>
         $("#myWhatsapp").floatingWhatsApp({
-            phone: "+8801708590337",
-            popupMessage: "Salam, how can we help you?",
+            phone: "+8801736231407",
+            popupMessage: "Salam, how can we Aid you?",
             showPopup: true,
             position: "right",
             zIndex: 15,

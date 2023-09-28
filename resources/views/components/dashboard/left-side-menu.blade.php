@@ -47,7 +47,8 @@ padding: 0.77rem 0.75rem;
       <a href="#" class="sl-menu-link">
         <div class="sl-menu-item">
           <i class="menu-item-icon icon ion-ios-gear-outline tx-24"></i>
-          <span class="menu-item-label">Forms</span>
+          {{-- <span class="menu-item-label">Forms</span> --}}
+          <span class="menu-item-label">Footer</span>
           <i class="menu-item-arrow fa fa-angle-down"></i>
         </div>
         <!-- menu-item -->
