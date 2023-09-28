@@ -28,8 +28,7 @@
     <meta property="og:url" content="https://mdfarukkhan.com/" />
     {{-- <meta property="og:image"
         content="https://mdfarukkhan.com/storage/image/Who-is-the-best-seo-expert-in-Bangladesh.jpg" /> --}}
-    <meta property="og:image"
-        content="{{ asset('assets/images/top-seo-area/750x415.png') }}" />
+    <meta property="og:image" content="{{ asset('assets/images/top-seo-area/750x415.png') }}" />
     <meta property="og:description"
         content="Boost your online presence with Md Faruk Khan, a leading SEO expert in Bangladesh, offering 10+ years of experience in driving business growth & success." />
     <!-- Google Tag Manager -->
@@ -53,6 +52,7 @@
 </head>
 
 <body>
+    <x-top-admin-bar/>
     <!-- header-area  -->
     <x-header-area />
     <x-hero-area />

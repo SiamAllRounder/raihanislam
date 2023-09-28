@@ -3,6 +3,7 @@ namespace App\Http\Controllers;
 
 use App\Models\MainNavigationMenuModel;
 use App\Models\FooterNote;
+use App\Models\HeroTexts;
 use Illuminate\Http\JsonResponse;
 
 
@@ -19,7 +20,14 @@ class HomeController extends Controller
     // Use Eloquent to count the rows in the table
     $rowCount = MainNavigationMenuModel::count();
     $rowCountfootnote = FooterNote::count();
+    $rowCountHeroTextLeft = HeroTexts::count();
 
+    if ($rowCountHeroTextLeft === 0) { 
+        HeroTexts::create([
+            'home_page_hero_text_description_on_left_column' => null // Replace with the desired name
+        ]);
+
+    }
     if ($rowCountfootnote === 0) { 
         FooterNote::create([
             'footernote' => null // Replace with the desired name

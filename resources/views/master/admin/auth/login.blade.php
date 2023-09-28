@@ -36,7 +36,7 @@
                             </div>
                             <div class="col-lg-6">
                                 <div class="d-flex flex-column h-100">
-                                    <div class="auth-brand p-4">
+                                    {{-- <div class="auth-brand p-4">
                                         <a href="index.html" class="logo-light">
                                             <img src="assets/velonic/assets/images/logo.png" alt="logo"
                                                 height="22">
@@ -45,6 +45,12 @@
                                             <img src="assets/velonic/assets/images/logo-dark.png" alt="dark logo"
                                                 height="22">
                                         </a>
+                                    </div> --}}
+                                    <div class="auth-brand p-4">
+                                        <h1>
+
+                                            <a href="{{ route('home') }}">Home</a>
+                                        </h1>
                                     </div>
                                     <div class="p-4 my-auto">
                                         <h4 class="fs-20">Sign In</h4>
