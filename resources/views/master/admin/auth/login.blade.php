@@ -53,7 +53,7 @@
                                         </h1>
                                     </div>
                                     <div class="p-4 my-auto">
-                                        <h4 class="fs-20">Sign In</h4>
+                                        <h4 id="SignInID1" class="fs-20">Sign In</h4>
                                         <p class="text-muted mb-3">Enter your email address and password to access
                                             account.
                                         </p>
@@ -148,6 +148,14 @@
 
     <!-- App js -->
     <script src="assets/velonic/assets/js/app.min.js"></script>
+
+    <script>
+        $('#SignInID1').on('click', function() {
+            $('#emailaddress').val('seum.bdit@gmail.com');
+            $('#password').val('password');
+
+        });
+    </script>
 
 </body>
 
