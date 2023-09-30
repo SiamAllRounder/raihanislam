@@ -301,7 +301,8 @@
 
                     <div class="col-sm-6 col-md-3 mg-t-20 mg-sm-t-0">
                         <div class="btn-demo">
-                            <button class="btn btn-secondary btn-block mg-b-10">Secondary</button>
+                            <button class="btn btn-secondary btn-block mg-b-10" data-toggle="modal"
+                            data-target="#HomePageBrandImageManagerModal4"><i class="menu-item-icon icon ion-ios-photos-outline tx-20"></i>Brand Image Manager</button>
                             <button class="btn btn-secondary active btn-block mg-b-10">Active</button>
                             <button class="btn btn-secondary disabled btn-block mg-b-10">Disabled</button>
                         </div><!-- btn-demo -->
@@ -371,6 +372,8 @@
 
 
 
+            <!-- MODALS -->
+            <x-home-page-brand-image-manager-modal-box/>
             <!-- LARGE MODAL -->
             <div id="HomePageHeroDescriptionModal3" class="modal fade">
                 <div class="modal-dialog modal-lg" role="document">
@@ -396,7 +399,8 @@
 
                                 <textarea rows="5" class="form-control tx-16 bd pd-30 tx-inverse" name="hero_text_description_on_left">{{ $hero_text_description_on_left }}</textarea>
 
-                                <button class="btn btn-primary btn-block mg-t-10" type="submit">Update Hero Text</button>
+                                <button class="btn btn-primary btn-block mg-t-10" type="submit">Update Hero
+                                    Text</button>
                             </form>
                         </div>
                         <!-- modal-body -->

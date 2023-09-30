@@ -5,6 +5,7 @@ use App\Http\Controllers\MasterAdminController;
 use App\Http\Controllers\MasterAdminLoginController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\YourController;
+use App\View\Components\HomePageBrandImageManagerModalBox;
 use Illuminate\Http\Request;
 
 /*
@@ -30,6 +31,11 @@ Route::get('/token', function (Request $request) {
 Route::get('/welcome', function () {
     return view('welcome');
 });
+
+
+Route::get('/test-component-route', [HomePageBrandImageManagerModalBox::class, 'test']);
+Route::post('/upload-brand-image', [HomePageBrandImageManagerModalBox::class, 'imageUpload'])->name('upload-brand-image');
+
 
 Route::post('/your-endpoint', [YourController::class, 'yourMethod']);
 
