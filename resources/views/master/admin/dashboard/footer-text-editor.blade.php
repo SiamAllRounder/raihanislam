@@ -60,7 +60,14 @@
                         class="icon ion-navicon-round"></i></a></div>
             <div class="navicon-left hidden-lg-up"><a id="btnLeftMenuMobile" href=""><i
                         class="icon ion-navicon-round"></i></a></div>
-        </div><!-- sl-header-left -->
+        </div>
+        <div class="sl-header-left">
+            <div class="navicon-left hidden-md-down"><a id="btnLeftMenu" href="{{ route('home') }}"><i
+                        class="fa fa-home"></i></a></div>
+            <div class="navicon-left hidden-lg-up"><a id="btnLeftMenuMobile" href="{{ route('home') }}"><i
+                        class="fa fa-home"></i></a></div>
+        </div>
+        <!-- sl-header-left -->
         <div class="sl-header-right">
             <nav class="nav">
                 <div class="dropdown">
