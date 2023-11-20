@@ -17,7 +17,7 @@
                         <button type="button" class="close" data-dismiss="alert">N</button>
                         <strong>{{ $message }}</strong>
                     </div>
-                    <img src="{{ asset('assets/images/brand-image').'/'.$latestImageName->name }}">
+                    <img width="95vw" src="{{ asset('assets/images/brand-image').'/'.$latestImageName->name }}">
                     {{-- <img src="brand-image/{{ \Session::get('image') }}"> --}}
                 @endif
                 <form action="{{ route('upload-brand-image') }}" method="post" enctype="multipart/form-data">
